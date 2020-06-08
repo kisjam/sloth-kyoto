@@ -1,0 +1,49 @@
+/*
+/* Base
+/*
+----------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/earlyaccess/notosansjapanese.css');
+@import url('https://use.typekit.net/uyl1udx.css');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP:400,700');
+
+html {
+  font-size: 62.5%;
+  background: #fff;
+}
+
+body {
+  font-family: 'Noto Sans Japanese', Verdana, Meiryo, "M+ 1p", sans-serif;
+  color: #000;
+  background-color: #ecedf0;
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // font-feature-settings : "palt";
+}
+img {
+  @include mq(sp) {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+a:link {
+  //text-decoration: none;
+  color: $color-text;
+}
+
+a:visited {
+  color: $color-text;
+}
+
+a:hover {
+  text-decoration: none;
+  //color: #999;
+}
+
+a:active {
+  //color: #55D6BE;
+}

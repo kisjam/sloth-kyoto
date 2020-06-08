@@ -1,0 +1,143 @@
+{% extends '_layouts/_default.njk' %}
+{% set pageTitle = '' %}
+{% set pageDescription = '' %}
+{% set pagekeywords = '' %}
+
+{% block css -%}{% endblock %}
+
+{% block contents -%}
+<main class="main">
+
+	<section class="about" id="about">
+		<div class="about__inner">
+			<h2 class="key-visual">SHISHA CAFE SLOTH KYOTO</h2>
+			<p class="about__lead">京都、シーシャ。</p>
+			<p class="about__desc">京都駅・京阪七条近くの<br>
+			シーシャ（水タバコ）カフェです。<br>
+			落ち着いた空間でゆったりとした<br>
+			時間をお楽しみください。</p>
+		</div>
+	</section>
+
+	<section class="news" id="news">
+		<div class="news__inner">
+			<h2 class="news__title">定休日</h2>
+			<div class="news__body">
+				<section class="news-month">
+					<h3 class="news-month__title">6<span class="news-month__ruby">月</span></h3>
+					<p class="news-month__date"><span class="news-month__num">14</span>日・<span class="news-month__num">15</span>日・<span class="news-month__num">16</span>日・<span class="news-month__num">17</span>日・<span class="news-month__num">24</span>日</p>
+				</section>
+			</div>
+		</div>
+	</section>
+
+	<section class="information" id="information">
+		<div class="information__inner">
+			<div class="information__header">
+				<h2 class="information__title">INFORMATION</h2>
+				<p class="information__ruby">店舗情報</p>
+			</div>
+			<div class="information__body">
+				<div class="googlemap" id="gmap">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26143.37579989033!2d135.75594949853289!3d35.008658242802596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600109a00924ba7f%3A0x48df81f929a506be!2sSloth+kyoto+(Shisha+Cafe)!5e0!3m2!1sja!2sjp!4v1541355864254" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+
+				<dl class="information__data">
+					<dt class="information__label">住所</dt>
+					<dd class="information__desc">〒605-0981 京都府京都市東山区本町8丁目66 りりぱっと七条 1F</dd>
+					<dt class="information__label">営業時間</dt>
+					<dd class="information__desc">17:00-24:00（土曜日のみ13:00-23:00）</dd>
+					<dt class="information__label">席数</dt>
+					<dd class="information__desc">20～25席（冬季は炬燵があります！）</dd>
+					<dt class="information__label">電話番号</dt>
+					<dd class="information__desc"><a href="tel:050-3567-4678">050-3567-4678</a></dd>
+					<dt class="information__label">メッセンジャー</dt>
+					<dd class="information__desc"><a href="https://www.messenger.com/t/slothkyoto" target="_blank">MESSENGER</a></dd>
+					<dt class="information__label">交通手段</dt>
+					<dd class="information__desc">京都駅から徒歩10分・京阪七条から徒歩5分</dd>
+					<dt class="information__label">駐車場</dt>
+					<dd class="information__desc">専用駐車場はございません、近くにコインパーキングがありますのでそちらをご利用ください。</dd>
+					<dt class="information__label">決済方法</dt>
+					<dd class="information__desc">現金の他にクレジットカード、電子決済が使用できます。</dd>
+					<dt class="information__label">WiFi</dt>
+					<dd class="information__desc">Free WiFi</dd>
+				</dl>
+
+				<div class="gallery">
+					<div class="gallery__item  --lg"><img src="/assets/images/img_gallery_01.jpg" alt=""></div>
+					<div class="gallery__item"><img src="/assets/images/img_gallery_02.jpg" alt=""></div>
+					<div class="gallery__item"><img src="/assets/images/img_gallery_03.jpg" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="price" id="price">
+		<div class="price__inner">
+			<div class="price__header">
+				<h2 class="price__title">PRICE</h2>
+				<p class="price__ruby">料金</p>
+				<p class="price__desc">シーシャはどのフレーバーも1,600円、<br>
+					ドリンクも全て600円（ソフトドリンクの場合は飲み放題）でございます。</p>
+			</div>
+			<div class="price__body">
+				<section class="price-data">
+					<h3 class="price-data__title"><span>SHISHA</span></h3>
+					<p class="price-data__num">1<span class="price-data__sm">,</span>600<span class="price-data__yen">yen</span></p>
+				</section>
+				<section class="price-data">
+					<h3 class="price-data__title"><span>CHARGE</span></h3>
+					<p class="price-data__num">600<span class="price-data__yen">yen</span></p>
+					<p class="price-data__notes">ソフトドリンク付き</p>
+				</section>
+				<section class="price-data">
+					<h3 class="price-data__title"><span>2 SHARE</span></h3>
+					<p class="price-data__num">3<span class="price-data__sm">,</span>000<span class="price-data__yen">yen</span></p>
+					<p class="price-data__notes">シーシャ1本 + ドリンク2人分</p>
+				</section>
+				<section class="price-data">
+					<h3 class="price-data__title"><span>3 SHARE</span></h3>
+					<p class="price-data__num">3<span class="price-data__sm">,</span>600<span class="price-data__yen">yen</span></p>
+					<p class="price-data__notes">シーシャ1本 + ドリンク3人分</p>
+				</section>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="contact" id="contact">
+		<div class="contact__inner">
+			<div class="contact__header">
+				<h2 class="contact__title">CONTACT</h2>
+				<p class="contact__ruby">お問い合わせ</p>
+				<p class="contact__desc">ご予約、お問い合わせは下記の連絡先かSNSへどうぞ</p>
+			</div>
+			<div class="contact__body">
+				<div class="contact-btn">
+					<div class="contact-btn__item --email"><a href="mailto:info@sloth-kyoto.com">E-MAIL</a></div>
+					<div class="contact-btn__item --messenger"><a href="https://www.messenger.com/t/slothkyoto" target="_blank">MESSENGER</a></div>
+				</div>
+				<div class="contact-phone">
+					<a href="tel:050-3567-4678">
+						<p class="contact-phone__number"><span class="hidden__sp">050-3567-4678</span><span class="hidden__pc">CALL</span></p>
+						<p class="contact-phone__notes">営業時間（17:00-24:00）</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+
+<footer class="site-footer hidden__pc">
+
+	<ul class="nav-sns">
+		<li class="nav-sns__item --instagram"><a href="https://www.instagram.com/sloth_kyoto/" target="_blank"><i class="icon icon-instagram"></i></a></li>
+		<li class="nav-sns__item --twitter"><a href="https://twitter.com/sloth_kyoto/" target="_blank"><i class="icon icon-twitter"></i></a></li>
+	</ul>
+
+	<p class="copyright"><small>© 2018-2019 SLOTH</small></p>
+
+</footer>
+{%- endblock %}
+
+{% block js -%}{% endblock %}
