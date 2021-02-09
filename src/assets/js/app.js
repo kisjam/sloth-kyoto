@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	// new ResponsiveImage();
 
-	mobileNavigation.init();
+	// mobileNavigation.init();
 	// $.smoothScroll();
 
 	// const sa = document.querySelectorAll('.sa');

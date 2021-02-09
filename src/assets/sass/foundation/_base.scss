@@ -21,7 +21,7 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  // font-feature-settings : "palt";
+  font-feature-settings : "palt";
 }
 img {
   @include mq(sp) {

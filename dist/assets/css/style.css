@@ -128,6 +128,8 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
 }
 
 @media screen and (max-width: 768px) {
@@ -653,7 +655,7 @@ a:hover {
 
 .news__title {
   position: absolute;
-  right: 80px;
+  right: 40px;
   top: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -718,7 +720,6 @@ a:hover {
 
 @media screen and (max-width: 768px) {
   .news-month__title {
-    min-width: 105px;
     font-size: 4.5rem;
     margin-right: 0;
     text-align: center;
