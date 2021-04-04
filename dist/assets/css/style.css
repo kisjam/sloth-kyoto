@@ -623,9 +623,7 @@ a:hover {
   z-index: 1;
   line-height: 3;
   font-size: 1.8rem;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {

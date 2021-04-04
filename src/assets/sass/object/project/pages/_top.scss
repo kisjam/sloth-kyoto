@@ -360,7 +360,8 @@
 		z-index: 1;
 		line-height: 3;
 		font-size: 1.8rem;
-		writing-mode: vertical-rl;
+		text-align: center;
+		// writing-mode: vertical-rl;
 
 		@include mq(sp) {
 			font-size: 1.5rem;
