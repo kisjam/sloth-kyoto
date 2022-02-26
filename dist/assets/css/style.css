@@ -869,7 +869,6 @@ a:hover {
 }
 
 .gallery {
-  margin-top: 130px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -878,6 +877,9 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-width: 650px;
+  margin: 120px auto 0;
+  padding: 0 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -887,23 +889,54 @@ a:hover {
 }
 
 .gallery__item {
-  width: 49%;
+  width: 50%;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .gallery__item.--lg {
   width: 100%;
-  margin-bottom: 10px;
 }
 
-@media screen and (max-width: 768px) {
-  .gallery__item.--lg {
-    margin-bottom: 2%;
-  }
+.gallery__item.--left {
+  width: 47.6%;
+}
+
+.gallery__item.--right {
+  width: 52.4%;
 }
 
 .gallery__item img {
   max-width: 100%;
   height: auto;
+}
+
+.gallery__item__thumb {
+  position: relative;
+}
+
+.gallery__item__thumb + .gallery__item__thumb {
+  margin-top: 10px;
+}
+
+.gallery__item__thumb figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery__item__thumb figcaption {
+    font-size: 1rem;
+  }
+}
+
+.gallery__item__thumb figcaption a {
+  color: #fff;
 }
 
 .price {
