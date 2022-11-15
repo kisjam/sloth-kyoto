@@ -33,6 +33,7 @@
 		transform: translateY(-50%);
 	}
 }
+
 .logo {
 	position: absolute;
 	top: 50%;
@@ -42,13 +43,14 @@
 
 	@include mq(sp) {
 		width: 50%;
-			transform: translate(-50%, -70%);
+		transform: translate(-50%, -70%);
 	}
 
 	svg {
 		fill: #fff;
 	}
 }
+
 .copyright {
 	writing-mode: vertical-rl;
 	font-size: 1.2rem;
@@ -162,9 +164,7 @@
 		flex-wrap: wrap;
 		box-sizing: border-box;
 
-		@include mq(sp) {
-
-		}
+		@include mq(sp) {}
 	}
 
 	&__item {
@@ -174,6 +174,7 @@
 			width: 1.8em;
 			padding: 0 3%;
 		}
+
 		a {
 			display: block;
 			position: relative;
@@ -202,6 +203,7 @@
 				}
 
 			}
+
 			&:hover {
 				&::after {
 					top: -80px;
@@ -296,6 +298,7 @@
 	}
 
 	&--scroll {
+
 		&::after,
 		&::before {
 			@include mq(sp) {
@@ -410,6 +413,7 @@
 		}
 	}
 }
+
 .news-month {
 
 	display: flex;
@@ -528,7 +532,7 @@
 		&:first-child {
 			border-top: none;
 
-			& + .information__desc {
+			&+.information__desc {
 				border-top: none;
 			}
 		}
@@ -603,7 +607,8 @@
 
 		&__thumb {
 			position: relative;
-			& + .gallery__item__thumb {
+
+			&+.gallery__item__thumb {
 				margin-top: 10px;
 			}
 
@@ -679,10 +684,7 @@
 	}
 
 	&__body {
-		margin-top: 60px;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
+		margin-top: 24px;
 
 		@include mq(sp) {
 			flex-direction: column;
@@ -695,38 +697,11 @@
 
 .price-data {
 	position: relative;
-	width: 48%;
-	margin-top: 40px;
+	border-bottom: 1px solid #d8d9dd;
+	padding: 32px 24px;
 
 	@include mq(sp) {
-		width: auto;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-wrap: wrap;
-		border-bottom: 1px #d8d9dd solid;
-		padding-bottom: 20px;
-		margin-top: 20px;
-	}
-
-	&::after {
-		content: '';
-		position: absolute;
-		top: 0;
-		right: 0;
-		height: 100%;
-		width: 1px;
-		background: #d8d9dd;
-
-		@include mq(sp) {
-			content: none;
-		}
-	}
-
-	&:nth-child(even) {
-		&::after {
-			content: none;
-		}
+		padding: 32px 0;
 	}
 
 	&:last-child {
@@ -735,12 +710,10 @@
 
 	&__title {
 		font-size: 2.2rem;
-		font-family: $ff-gill;
 		font-weight: bold;
-		text-align: center;
 
 		@include mq(sp) {
-			font-size: 1.8rem;
+			font-size: 1.6rem;
 			margin-right: 10px;
 		}
 
@@ -763,11 +736,10 @@
 		font-weight: bold;
 		font-family: $ff-gill;
 		color: $color-blue;
-		text-align: center;
 
 		@include mq(sp) {
 			font-size: 4.5rem;
-			margin-top: 0;
+			margin-top: 8px;
 			margin-left: 10px;
 		}
 	}
@@ -795,6 +767,14 @@
 
 		@include mq(sp) {
 			width: 100%;
+		}
+	}
+
+	&__desc {
+		line-height: 1.8;
+
+		@include mq(sp) {
+			margin-top: 8px;
 		}
 	}
 }
