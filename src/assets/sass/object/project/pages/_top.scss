@@ -385,87 +385,29 @@
 	&__inner {
 		position: relative;
 		max-width: 640px;
+		padding: 32px 32px;
 		margin: 0 auto;
-
 		border: 1px $color-black solid;
+		// background: #fff;
+		backdrop-filter: blur(8px);
 	}
 
 	&__title {
-		position: absolute;
-		right: 40px;
-		top: 0;
-		transform: translateY(-50%);
-		min-height: 160px;
-		box-sizing: border-box;
-		background: $color-black;
-		color: #fff;
-		writing-mode: vertical-rl;
-		font-size: 2rem;
+		font-size: 2.4rem;
 		font-weight: bold;
-		padding: 40px 20px;
-		letter-spacing: .3em;
 
 		@include mq(sp) {
-			right: 40px;
-			min-height: 80px;
-			padding: 20px 8px;
-			font-size: 1.5rem;
-		}
-	}
-}
-
-.news-month {
-
-	display: flex;
-	align-items: center;
-	padding: 40px 140px 50px 60px;
-
-	@include mq(sp) {
-		flex-direction: column;
-		justify-content: center;
-		padding: 30px 60px;
-	}
-
-	&:nth-of-type(2) {
-		padding-top: 0;
-		margin-top: -30px;
-	}
-
-
-	&__title {
-		color: $color-black;
-		font-size: 7rem;
-		font-family: $ff-mincho;
-		margin-right: 30px;
-		min-width: 105px;
-
-		@include mq(sp) {
-			font-size: 4.5rem;
-			margin-right: 0;
-			text-align: center;
+			font-size: 1.8rem;
 		}
 	}
 
-	&__num {
-		font-size: 1.8rem;
+	&__list {
+		margin-top: 16px;
 	}
 
-	&__date {
-		margin-top: 10px;
-
-		@include mq(sp) {
-			margin-top: 0;
-			font-size: 1.2rem;
-		}
-	}
-
-	&__ruby {
-		font-size: 2.3rem;
-		font-family: 'Noto Sans Japanese', sans-serif;
-
-		@include mq(sp) {
-			font-size: 1.6rem;
-		}
+	&__desc {
+		font-size: 1.6rem;
+		line-height: 1.8;
 	}
 }
 
